@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>DevExtreme Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.1.4/css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.1.4/css/dx.light.css" />
+    <script src="https://cdn3.devexpress.com/jslib/20.1.4/js/dx.all.js"></script>
+    <!-- <script src="data.js"></script> -->
+    <script src="index.js"></script>
+    <script src="./server/index.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+</head>
+
+<body class="dx-viewport">
+    <h1>Demo Product Page</h1>
+    <nav class="navbar navbar-light" style="background-color: #9de7f2;">
+        <form id="keyword" class="form-inline">
+            <input class="form-control mr-sm-2" id="title" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                style="background-color: black;">
+                Sort by anything you want :))
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a id="atoz" class="dropdown-item" onclick="atoz()">A to Z</a>
+                <a id="ztoa" class="dropdown-item" onclick="ztoa()">Z to A</a>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+        </div>
+    </nav>
+    <div class="demo-container">
+        <div id="gridContainer"></div>
+    </div>
+</body>
+
+</html>
